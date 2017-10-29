@@ -1,1 +1,4 @@
-var twitterKeys = require(keys.js)
+var twitterKeys = require("twitterKeys");
+
+twitterKeys("keys.js")
+
