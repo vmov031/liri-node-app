@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vmov031/liri-node-app/issues"
   },
-  "homepage": "https://github.com/vmov031/liri-node-app#readme"
+  "homepage": "https://github.com/vmov031/liri-node-app#readme",
+  "dependencies": {
+    "spotify-web-api-node": "^2.5.0"
+  }
 }

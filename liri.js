@@ -1,4 +1,10 @@
-var twitterKeys = require("twitterKeys");
+var keys = require("keys.js");
 
-twitterKeys("keys.js")
+var request = require("request");
+var Twitter = require("twitter");
+var Spotify = require("node-spotify-api");
+var 
 
+function myTweets() {
+
+}
