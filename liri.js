@@ -42,26 +42,45 @@ var queryUrl = "http://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=40e
 var movieName = "";
 
 function movie-this (input) {
-	for (var i = 2; i < nodeArgs.length; i++) {
+	for (var i = 3; i < input.length; i++) {
 
-  if (i > 2 && i < nodeArgs.length) {
+  if (i > 3 && i < input.length) {
 
-    movieName = movieName + "+" + nodeArgs[i];
+    movieName = movieName + "+" + input[i];
 
   }
   else {
 
-    movieName += nodeArgs[i];
+    movieName += input[i];
 
   }
 }
-
 
 request(queryUrl, function(error, response, body) {
 
   if (!error && response.statusCode === 200) {
     console.log("Title: " + JSON.parse(body).title + "Release Year: " + JSON.parse(body).Year) + "Rating: " + JSON.parse(body.Rating);
   }
+
+  if (!input){
+  	input = 'Mr. Nobody';
+  }
 });
+
+}
+
+function do-what-it-says (input) {
+	fs.readFile("random.txt", "utf8", function(error, data){
+		if (error) {
+			console.log(error);
+		}
+
+		console.log(data);
+
+		var dataArr = data.split(",");
+
+		console.log(dataArr);
+	});
+}
 
 
