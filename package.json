@@ -1,5 +1,5 @@
 {
-  "name": "twitter",
+  "name": "-f",
   "version": "1.0.0",
   "description": "tweets",
   "main": "keys.js",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/vmov031/liri-node-app#readme",
   "dependencies": {
-    "spotify-web-api-node": "^2.5.0"
-  }
+    "node-spotify-api": "^1.0.7",
+    "spotify-web-api-node": "^2.5.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {}
 }
