@@ -8,3 +8,12 @@ var twitterKeys = {
 }
 
 module.exports = twitterKeys;
+
+var SpotifyWebApi = require('spotify-web-api-node');
+ 
+
+var spotifyApi = new SpotifyWebApi({
+  clientId : 'b0bf7f1ba03041e28dfe41d03e28f949',
+  clientSecret : 'ffa8add1f5a64e829c61a5b0d5f37341',
+  redirectUri : 'http://www.example.com/callback'
+});
